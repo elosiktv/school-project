@@ -1,0 +1,111 @@
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    font-family: 'Open Sans';
+  }
+    
+.slider-page {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    padding: 3px;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    right: 25px;
+    bottom: 5px;
+    p {
+        margin: 0;
+    }
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.section.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper {
+    width: 50%;
+    height: 100%;
+}
+
+.slide-1 {
+    @include flexbox;
+    flex-direction: column;
+    font-size: 60px;
+}
+
+.slide-2 {
+    @include flexbox;
+    .wrapper {
+        @include flexbox;
+        flex-direction: column;
+    }
+    .wrapper:first-of-type {
+        font-size: 50px;
+    }
+    .wrapper:last-of-type {
+        font-size: 28px;
+    }
+    img {
+        margin-top: 10px;
+    }
+}
+
+.slide-3 {
+    @include flexbox;
+    font-size: 28px;
+    .wrapper {
+        @include flexbox;
+    }
+}
+
+.slide-4 {
+    @include flexbox;
+    .wrapper {
+        @include flexbox;
+        flex-direction: column;
+    }
+    .picture-text {
+        position: relative;
+        top: -15px;
+    }
+    ul {
+        list-style: initial;
+        font-size: 26px;
+        li {
+            padding: 5px;
+            &:nth-child(even) {
+                background-color: lightgrey;
+            }
+        }
+    }
+    .wrapper:last-of-type {
+        p {
+            font-size: 24px;
+            margin-top: 15px;
+            width: 90%;
+        }
+    }
+}
