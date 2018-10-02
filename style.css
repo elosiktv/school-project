@@ -94,3 +94,24 @@
     font-size: 24px;
     margin-top: 15px;
     width: 90%; }
+
+.slide-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .slide-5 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .slide-5 .picture-text {
+    position: relative;
+    top: -15px; }
+  .slide-5 ul {
+    width: 90%;
+    list-style: initial;
+    font-size: 26px; }
+    .slide-5 ul li {
+      padding: 5px; }
+      .slide-5 ul li:nth-child(odd) {
+        background-color: lightgrey; }

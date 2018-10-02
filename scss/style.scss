@@ -109,3 +109,26 @@
         }
     }
 }
+
+.slide-5 {
+    @include flexbox;
+    .wrapper {
+        @include flexbox;
+        flex-direction: column;
+    }
+    .picture-text {
+        position: relative;
+        top: -15px;
+    }
+    ul {
+        width: 90%;
+        list-style: initial;
+        font-size: 26px;
+        li {
+            padding: 5px;
+            &:nth-child(odd) {
+                background-color: lightgrey;
+            }
+        }
+    }
+}
