@@ -39,6 +39,10 @@
             </div>
         </section>
         <section class="section slide-4">
+            <img src="imgs/nuszki-1.png">
+            <img src="imgs/nuszki-2.png">
+        </section>
+        <section class="section slide-5">
             <div class="wrapper">
                 <img src="imgs/schemat procesora.png">
                 <p class="picture-text">Schemat blokowy procesora</p>
@@ -62,16 +66,16 @@
                     (sumowanie, mnożenie itp.).</p>
             </div>
         </section>
-        <section class="section slide-5">
+        <section class="section slide-6">
             <div class="wrapper">
                 <ul>
                     <li>A - akumulatory - rejestr który zawiera jeden z a</li>
                     <li>B, C, D, E, H, L - rejestry robocze</li>
                     <li>F - rejestr flagowy - zawiera dodatkowe cechy wyniku wykonywanej operacji, które potrzebne są do podjęcia decyzji o dalszym sposobie przetwarzania informacji.</li>
-                    <li>IR - rejestr instrukcji</li>
+                    <li>IR - rejestr instrukcji- Zawiera kod aktualnie wykonywanej instrukcji</li>
                     <li>D - Dekoder</li>
                     <li>EU - jednostka wykonawcza</li>
-                    <li>CU - jednostka sterująca</li>
+                    <li>CU - jednostka sterująca - Odpowiedzialna za dekodowanie rozkazów i sterowanie wszystkimi innymi blokami CPU.</li>
                     <li>PC - licznik rozkazów - jest jednym z istnotniejszych rejestrów dzięki któremu procesor potrafi pobierać kolejne rozkazy do wykonania.</li>
                     <li>SP - wskaźnik stosu - służy do adresowania pamięci.</li>
                 </ul>
@@ -81,7 +85,12 @@
                 <p class="picture-text">Schemat blokowy procesora - wykonywanie rozkazków</p>
             </div>
         </section>
+        <section class="section slide-7">
+            <img src="imgs/zegar.gif">
+            <p>Kluczem do działania całości i współpracy między tymi elementami jest zegar. Steruje on wszystkimi częściami składowymi procesora, dostarczając do nich sygnał elektryczny o określonej częstotliwości taktowania. Podstawowa, jednostkowa operacja wykonywana jest za każdym razem, kiedy dotrze do nich impuls taktujący. Im wyższa częstotliwość, tym szybciej wykonywane mogą być te operacje. Procesor taktowany zegarem o częstotliwości np. 1 GHz wykonuje miliard operacji na sekundę.</p>
+        </section>
       </div>
+      <!-- MAGISTRALE -->
     <script src="script.js"></script>
 </body>
 </html>

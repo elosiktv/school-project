@@ -71,6 +71,9 @@
     img {
         margin-top: 10px;
     }
+    p {
+        padding-right: 30px;
+    }
 }
 
 .slide-3 {
@@ -82,6 +85,10 @@
 }
 
 .slide-4 {
+    @include flexbox;
+}
+
+.slide-5 {
     @include flexbox;
     .wrapper {
         @include flexbox;
@@ -110,7 +117,7 @@
     }
 }
 
-.slide-5 {
+.slide-6 {
     @include flexbox;
     .wrapper {
         @include flexbox;
@@ -130,5 +137,15 @@
                 background-color: lightgrey;
             }
         }
+    }
+}
+
+.slide-7 {
+    @include flexbox;
+    flex-direction: column;
+    p {
+        margin-top: 30px;
+        width: 50%;
+        font-size: 24px;
     }
 }
