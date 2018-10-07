@@ -11,22 +11,24 @@ function changeSlide() {
 }
 
 window.addEventListener('keydown', (e) => {
-  //right
-  if (e.keyCode == 39) {
-    previousSlide = activeSlide;
-    activeSlide++;
-    if (activeSlide >= slides.length-1) {
-      activeSlide = slides.length-1;
+  if (slides[0].offsetWidth >= 1000) {
+    //right
+    if (e.keyCode == 39) {
+      previousSlide = activeSlide;
+      activeSlide++;
+      if (activeSlide >= slides.length-1) {
+        activeSlide = slides.length-1;
+      }
+      changeSlide();
     }
-    changeSlide();
-  }
-  //left
-  if (e.keyCode == 37) {
-    previousSlide = activeSlide;
-    activeSlide--;
-    if (activeSlide < 0) {
-      activeSlide = 0;
+    //left
+    if (e.keyCode == 37) {
+      previousSlide = activeSlide;
+      activeSlide--;
+      if (activeSlide < 0) {
+        activeSlide = 0;
+      }
+      changeSlide();
     }
-    changeSlide();
   }
 }); 
